@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #texto,button{
+            border-radius: 10px;/*deixa a borda redonda*/
+        }
+        #enviar{
+            background-color:chartreuse;
+        }
+        #resetar{
+            background-color: crimson;
+        }
+
+        #resetar:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo do Número</h1>
+    <input id="texto" placeholder="Digite um número" type="text">
+    <button id="enviar" onclick="enviar()">Enviar</button>
+    <button id="resetar" onclick="resetar()">Reset</button><br>
+    <span id="res"></span>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
