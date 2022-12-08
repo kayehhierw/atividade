@@ -5,11 +5,7 @@ var num2 = sorteados[numero]
 
 function enviar(){
     var num = document.querySelector("#texto").value
-    /*if(num==num2){
-        alert("Acertou!!!")
-    }else{
-        alert("Errou!!!")
-    }*/
+    
     var acertos = 0
     for(let i=0;i<num.length;i++){
         if(num[i] == num2[i]){
@@ -18,8 +14,6 @@ function enviar(){
     }
     res.innerText = "Voce acertou "+acertos+" numero(s)"
 }
-
-
 
 function resetar(){
     texto.value = ""
